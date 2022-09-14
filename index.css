@@ -16,6 +16,11 @@ p{
     font-size: 1.5rem;
 }
 
+img{
+    width:500px;
+    height: auto;
+}
+
 .banner{
  
     margin: 0;
@@ -25,8 +30,6 @@ p{
    /* color: white;*/
 
 }
-
-
 
 .header{
     background: #362D63;
@@ -38,6 +41,13 @@ p{
     align-items: center;
     font-weight: bold;
     
+}
+
+.logo{
+    color: white;
+    margin-left: 20px;
+
+
 }
 
 
@@ -76,8 +86,12 @@ p{
  
 }
 
+.home img{
+    width:800px;
+}
+
 .home-content h1{
-    font-size: 4.8rem;
+    font-size: 5rem;
     text-align: center;
     text-decoration: none;
 }
@@ -153,4 +167,161 @@ footer{
     height: 75px;
     text-align: center;
     padding-top: 30px;
+}
+
+
+
+@media only screen and (max-width:755px){
+
+h1{
+    font-size: 2rem;
+    margin: 20px 0px;
+    text-decoration: underline; 
+    
+}
+.header{
+    width:755px;
+
+}
+.banner{
+    width: 755px;
+    height: auto;
+}
+.home{
+    width:755px;
+    height: auto;
+    
+}
+
+
+.home h1{
+    font-size: 2.5rem;
+    height: auto;
+    
+}
+
+.about{
+    width: 755px;
+    height: auto;
+}
+
+.services{
+    width: 755px;
+    height: auto;
+}
+
+.services-container{
+    width:755px;
+    height: auto;
+}
+
+.services-container div img{
+    width:150px;
+    height: auto;
+}
+ 
+.contact{
+    width:755px;
+    height: auto;
+    margin-top: 50px;
+
+
+}
+.contact img{
+    width: 400px;
+}
+
+
+}
+
+@media only screen and (max-width:600px){
+
+ h1{
+   font-size:2rem;
+   margin: 20px 0px ;
+   text-decoration-line: underline;
+    }
+ p{
+   font-size: 1.3rem;
+   margin: 10px 10px;
+    }
+
+.banner{
+   width: 600px;
+   height: auto;
+    }
+    
+.header{
+  width:600px;
+    
+ 
+    }
+
+.home{
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+       
+    }
+
+
+.home-content h1{
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.about{
+    width:600px;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+.services{
+    width:600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.services-container{
+    width:600px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+.services-container div img{
+    width: 120px;
+
+}
+
+
+
+.contact{
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
 }

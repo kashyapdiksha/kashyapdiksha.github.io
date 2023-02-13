@@ -32,14 +32,17 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ">
-      <li class="nav-item active">
+      <!-- <li class="nav-item active">
         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
+      </li> -->
+      <li class="nav-item active">
         <a class="nav-link" href="#about">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#project">Projects</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#contact">contact</a>
@@ -63,6 +66,8 @@
         </div>
     </div>
    
+<!--    <div class="up"> <img src="imgs/up-arrow.png" > </div> -->
+
    <section class="banner">
        <div class="banner-text">
            <!-- <p>I am a self-starter with strong interpersonal skills. I work efficiently both as an individual contributor as well as along with a team. I seek new challenges and try to think out-of-the-box while looking for creative solutions to a given problem.</p> -->
@@ -103,12 +108,19 @@
        </div>
    </section>
 
+   <section class="projects" id="project">
+       <h1> <span style="color: #362D63;"> M</span>y Offline Projects </h1>
+       <div class="my-projects">
+           <div class="view-project"> <img src="imgs/project1.png" > <a href="project-reveal/index.html" target="_blank"> View Project </a> </div>
+           <div class="view-project"> <img src="imgs/project2.png" > <a href="#" target="_blank"> View Project </a> </div>
+      </div>
+   </section>
     <section class="contact" id="contact">
         <div class="contact-container">
             <div class="img grid-item"> <img src="imgs/contact.png" > </div>
             <div class="about-content grid-item">
-               <h1><h1> <span style="color: #362D63;">c</span>ontact </h1>
-               <p> You can contact me on my email <br>
+               <h1> <span style="color: #362D63;">c</span>ontact </h1>
+               <p> If you want to hire me you can contact me On my email <br>
                <a href="https://mail.google.com/mail/u/0/#inbox">dikshak210@gmail.com</a>
                </p>
             </div>
@@ -153,6 +165,16 @@ $('.services-container').slick({
     }
   ]
 });
+
+$('.my-projects').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+    
+
 });
     
 })( jQuery );

@@ -1,8 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    /*overflow-x: hidden;*/
 
+}
+html {
+    scroll-behavior: smooth;
 }
 h1{
     font-size: 5rem;
@@ -12,6 +17,7 @@ h1{
 p{
     text-align: center;
     font-size: 1.5rem;
+    text-transform: capitalize;
 }
 img{
     width:100%;
@@ -42,11 +48,12 @@ button a:hover{
 .header-container{
     display: flex;
     justify-content:space-between;
-    height:75px;
+   /* height:75px;*/
     align-items: center;
     font-weight: bold;
     width: 90%;
     margin: auto;
+    padding: 10px 0px;
     }
 /*.logo{
     color: white;
@@ -71,10 +78,13 @@ button a:hover{
 	justify-content: flex-end;
 }
 .navbar-light .navbar-toggler-icon{
-	background-image: url("hamburger(1).png") !important;
+	background-image: url("imgs/hamburger(1).png") !important;
 }
 .navbar{
 	width: 100%;
+}
+.navbar-nav{
+    align-items: flex-end;
 }
 .navbar-light .navbar-toggler{
 	 color: #fff !important;
@@ -82,6 +92,11 @@ button a:hover{
 }
 .navbar a {
     color: #fff !important;
+}
+.collapse.show {
+   /* margin-top: 137px;
+    text-align: right;
+    background: #000000;*/
 }
 .home {
 	 padding: 0px 20px;
@@ -160,7 +175,7 @@ button a:hover{
 .services-container div img{
     width:100%;
 }
-.services-container .slick-next:before, .slick-prev:before{
+.slick-next:before, .slick-prev:before{
 	    color: #000000 !important;
 }
 .slick-arrow{
@@ -174,6 +189,23 @@ button a:hover{
 }
 .slick-next:before, .slick-prev:before{
 	font-size: 30px !important ;
+}
+.projects{
+	padding: 20px;
+}
+.projects a{
+	color: #362D63;
+	font-weight: 600;
+	padding-top: 20px;
+}
+.view-project{
+    padding: 50px 100px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+.view-project img{
+    box-shadow: 0 3px 8px;
 }
 .contact{
 	padding: 20px;

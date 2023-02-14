@@ -233,6 +233,15 @@ button:hover{
 	transition: all ease-in .5;
 	margin: 10px;
 }
+.services-wrapper-item {
+    display: flex;
+}
+.services-media {
+    width: 40%;
+}
+.services .item{
+	padding: 20px;
+}
 .services .rte{
 	padding: 10px 0px;
 }
@@ -242,9 +251,9 @@ button:hover{
 	font-size: 23px; 
 	font-weight: 600;
 }
-.services-wrapper-grid-item p{
+/*.services-wrapper-grid-item p{
 	padding: 10px 0px 0px 140px;
-}
+}*/
 .client-logo{
 	padding: 0px 20px;
 }
@@ -358,9 +367,6 @@ button:hover{
 	text-align: center;
 	color: #ffffff;
 }
-/*.our-team .rte{
-    color: #ffffff;
-}*/
 .contact h5{
     padding: 20px 0px;
     margin-bottom: 0px;
@@ -423,9 +429,6 @@ button:hover{
 
 
 @media only screen and (max-width:980px){
-h1, .h1{
-	font-size: 2.0rem;
-}
 h3, .h3{
 	font-size: 30px;
 }
@@ -449,8 +452,12 @@ li{
 .our-team h2{
 	font-size: 1rem;
 }
+.h1, h1 {
+    font-size: 2rem !important;
+}
 }
 @media only screen and (max-width:480px){
+
 h2, .h2{
    font-size: 1.5rem !important;
 }

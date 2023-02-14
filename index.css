@@ -38,6 +38,9 @@ button a:hover{
 	color: #fff;
 	text-decoration: none;
 }
+.rte{
+    padding: 0px 20px;
+}
 .container-fluid{
 	 padding-left: 0px !important;
 	 padding-right: 0px !important;
@@ -225,6 +228,9 @@ button a:hover{
 .contact p a:hover{
     color: black;
 }
+.contact .grid-item{
+     width: 50%;
+}
 footer{
     text-align: center;
     padding: 30px 0px;
@@ -235,10 +241,6 @@ footer{
 /*----------------Responsive------------------*/
 @media only screen and (max-width:768px){
 
-h1{
-    font-size: 2rem;
-    text-decoration: underline; 
-}
 p{
 	font-size: 1.3rem;
 	padding: 0px 30px;
@@ -264,13 +266,15 @@ p{
 .banner-text{
 	width: 80%;
 }
+.projects .slick-next:before,  .projects .slick-prev:before {
+     display: none;
+}
 }
 
 @media only screen and (max-width:640px){
 
 h1{
-   font-size:2rem;
-   text-decoration-line: underline;
+   font-size: 2rem !important;
 }
 p{
    font-size: 1.3rem;
@@ -315,7 +319,11 @@ p{
     }
 }
 @media only screen and (max-width:480px){
-	p{
-		font-size: 0.8rem;
-	}
+p{
+	font-size: 0.8rem;
+}
+.view-project{
+    padding: 10px 10px;
+}
+
 }

@@ -10,6 +10,9 @@
 html {
     scroll-behavior: smooth;
 }
+h1, .h1, h3, .h3{
+	font-weight: 600 !important;
+}
 h5{
 	color: gray;
 /*	text-align: center;*/
@@ -235,25 +238,34 @@ button:hover{
 }
 .services-wrapper-item {
     display: flex;
+    flex-wrap: wrap;
 }
 .services-media {
-    width: 40%;
+    /*width: 40%;*/
 }
 .services .item{
+	/*width: 50%;*/
 	padding: 20px;
+}
+.services-media {
+    width: 25%;
+}
+.services-text.item {
+    width: 75%;
 }
 .services .rte{
 	padding: 10px 0px;
 }
 .services-wrapper-grid-item h2{
 	color: #000000;
-	padding: 30px 0px 0px 140px; 
+	/*padding: 30px 0px 0px 140px; */
 	font-size: 23px; 
 	font-weight: 600;
+	text-align: center;
 }
-/*.services-wrapper-grid-item p{
-	padding: 10px 0px 0px 140px;
-}*/
+.services .services-text p{
+	font-size: 0.9rem;
+}
 .client-logo{
 	padding: 0px 20px;
 }
@@ -295,9 +307,17 @@ button:hover{
 	position: absolute;
 	width:100%;
 	height:100%;
-	background-color: black;
+	background-color: #808080;
 	opacity: 0;
 	top:0;
+}
+.overlay h1{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #ffffff;
 }
 .testimonials-wrapper{
 	display: flex;
@@ -310,7 +330,7 @@ button:hover{
 	/*margin: 0px 20px;
 	padding: 20px;*/
 	text-align: center;
-	font-size:18px;
+	font-size:16px;
 	font-weight:500;
 	box-shadow:  1px 1px 3px 1px gray;
 }
@@ -323,6 +343,10 @@ button:hover{
 .testimonials .slick-slide{
 	margin: 20px;
 	padding: 10px;
+}
+.testimonials h2{
+	font-size: 1.4rem !important;
+    padding-top: 20px; 
 }
 .action{
     background: #000000;
@@ -444,8 +468,20 @@ li{
 .content .grid-item{
 	width: 100%;
 }
+.services-wrapper-item{
+	align-items: center;
+}
+}
+
+@media only screen and (max-width:768px){
+.services .item {
+	padding: 0px 15px;
+}
 }
 @media only screen and (max-width:640px){
+p {
+    font-size: 14px;
+}
 .announcement-bar{
 	display: none;
 }
@@ -459,13 +495,27 @@ li{
 @media only screen and (max-width:480px){
 
 h2, .h2{
-   font-size: 1.5rem !important;
+   font-size: 1rem !important;
 }
 p{
 	font-size: 12px;
 }
+button {
+    width: 100px;
+    height: 46px;
+    padding: 10px;
+}
+button a {
+    font-size: 11px;
+}
+.header h1 {
+    font-size: 1rem !important;
+}
+.banner-text .btnn{
+	padding: 0px;
+}
 .page-width{
-   	padding: 0px 30px;
+   	padding: 0px 15px;
 }
 .action-wrapper{
 	flex-direction: column;
@@ -484,5 +534,23 @@ p{
 	margin: 10px;
 	padding: 20px;
 }
-
+.slick-next:before, .slick-prev:before {
+     display: none;
+}
+.services-wrapper-item{
+	flex-direction: column;
+	justify-content: center;
+}
+.services .item{
+	padding: 10px 0px;
+}
+.services-text.item{
+	text-align: center;
+}
+.contact h5 {
+    font-size: 0.7em;
+}
+.contact p {
+    font-size: 9px;
+}
 }

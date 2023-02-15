@@ -50,6 +50,7 @@ button{
 	background-color: blue;
 	color: white;
 	border: none;
+/*	margin: 0px 20px !important;*/
 
 }
 
@@ -57,6 +58,9 @@ button:hover{
 	background-color: transparent;
 	color:blue;
 	border:3px solid blue;
+}
+button a{
+	font-size: 15px;
 }
 .slick-next:before, .slick-prev:before {
     color: #000 !important;
@@ -72,8 +76,8 @@ button:hover{
 	padding: 0px 75px;
 }
 .padding-top-bottom{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
 }
 .announcement-bar{
 	background-color: transparent;
@@ -134,6 +138,7 @@ button:hover{
 }
 .navbar{
 	padding: 0px 20px;
+	flex-wrap: nowrap !important;
 }
 .hero-section{
 	position: relative;
@@ -240,8 +245,8 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
 }
-.services-media {
-    /*width: 40%;*/
+.services .media {
+    width: 80%;
 }
 .services .item{
 	/*width: 50%;*/
@@ -347,6 +352,9 @@ button:hover{
 .testimonials h2{
 	font-size: 1.4rem !important;
     padding-top: 20px; 
+}
+.testimonials .slick-list{
+	padding: 0px 10px;
 }
 .action{
     background: #000000;
@@ -474,9 +482,14 @@ li{
 }
 
 @media only screen and (max-width:768px){
+button a{
+	font-size: 13px;
+}
 .services .item {
 	padding: 0px 15px;
 }
+button{
+	width:127px;
 }
 @media only screen and (max-width:640px){
 p {
@@ -491,6 +504,7 @@ p {
 .h1, h1 {
     font-size: 2rem !important;
 }
+
 }
 @media only screen and (max-width:480px){
 
@@ -504,9 +518,14 @@ button {
     width: 100px;
     height: 46px;
     padding: 10px;
+    margin: 0px 10px;
 }
 button a {
     font-size: 11px;
+}
+.padding-top-bottom {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
 }
 .header h1 {
     font-size: 1rem !important;
@@ -537,6 +556,9 @@ button a {
 .slick-next:before, .slick-prev:before {
      display: none;
 }
+/*.slick-next, .slick-prev{
+	margin: 0px !important;
+}*/
 .services-wrapper-item{
 	flex-direction: column;
 	justify-content: center;
@@ -552,5 +574,8 @@ button a {
 }
 .contact p {
     font-size: 9px;
+}
+.overlay h1{
+	font-size: 1.5rem !importan
 }
 }
